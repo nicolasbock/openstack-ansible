@@ -83,7 +83,7 @@
         bridge: "br-mgmt"
         mtu: 9000
       - interface: "br-mgmt"
-        address: "172.29.236.100"
+        address: [ "172.29.236.100", "fd00:0:0:236::100" ]
         netmask: "255.255.252.0"
 
       - interface: "dummy-storage"
