@@ -173,8 +173,8 @@ install_method: source
 # HAProxy Keepalived configuration (cf. documentation)
 # Make sure that this is set correctly according to the CIDR used for your
 # internal and external addresses.
-# haproxy_keepalived_external_vip_cidr: "{{external_lb_vip_address}}/32"
-# haproxy_keepalived_internal_vip_cidr: "{{internal_lb_vip_address}}/32"
+# haproxy_keepalived_external_vip_cidr: "{{ external_lb_vip_address }}/32"
+# haproxy_keepalived_internal_vip_cidr: "{{ internal_lb_vip_address }}/32"
 # haproxy_keepalived_external_interface:
 # haproxy_keepalived_internal_interface:
 
