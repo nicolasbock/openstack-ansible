@@ -6,7 +6,7 @@ cidr_networks:
 {% if 'octavia' in bootstrap_host_services %}
   lbaas: 172.29.252.0/22
 {% endif %}
-  container: 172.29.236.0/22
+  container: fd00:0:0:236::/112
   tunnel: 172.29.240.0/22
   storage: 172.29.244.0/22
 
@@ -21,13 +21,13 @@ used_ips:
 {% endif %}
   - "172.29.236.1,172.29.236.50"
   - "172.29.236.100"
-  - "fd00:0:0:236::100"
   - "172.29.240.1,172.29.240.50"
   - "172.29.240.100"
   - "172.29.244.1,172.29.244.50"
   - "172.29.244.100"
   - "172.29.248.1,172.29.248.50"
   - "172.29.248.100"
+  - "fd00:0:0:236::100"
 
 global_overrides:
   internal_lb_vip_address: fd00:0:0:236::100
@@ -118,7 +118,7 @@ global_overrides:
 # galera, memcache, rabbitmq, utility
 shared-infra_hosts:
   aio1:
-    ip: 172.29.236.100
+    ip: fd00:0:0:1::100
     container_vars:
       # Optional | container_tech for a target host, default is "lxc".
       container_tech: "{{ bootstrap_host_container_tech }}"
