@@ -1,7 +1,7 @@
 ---
 storage-infra_hosts:
   aio1:
-    ip: 172.29.236.100
+    ip: fd00:0:0:236::100
     container_vars:
       cinder_qos_specs:
         - name: low-iops
@@ -28,7 +28,7 @@ storage-infra_hosts:
 
 storage_hosts:
   aio1:
-    ip: 172.29.236.100
+    ip: fd00:0:0:236::100
     container_vars:
       cinder_backends:
         limit_container_types: cinder_volume
@@ -36,7 +36,7 @@ storage_hosts:
           volume_group: cinder-volumes
           volume_driver: cinder.volume.drivers.lvm.LVMVolumeDriver
           volume_backend_name: LVM_iSCSI
-          iscsi_ip_address: "172.29.236.100"
+          iscsi_ip_address: "fd00:0:0:236::100"
           lvm_type: "thin"
           extra_volume_types:
             - low-iops
