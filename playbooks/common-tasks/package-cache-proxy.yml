@@ -44,7 +44,7 @@
 - name: Remove yum package manager proxy
   lineinfile:
     line: >-
-      proxy="http://{{ internal_lb_vip_address }}:{{ repo_pkg_cache_port | default('3142') }}"
+      proxy="http://{{ internal_lb_vip_address | ipwrap }}:{{ repo_pkg_cache_port | default('3142') }}"
     dest: "/etc/yum.conf"
     state: absent
   when:
@@ -57,7 +57,7 @@
 - name: Remove dnf package manager proxy
   lineinfile:
     line: >-
-      proxy="http://{{ internal_lb_vip_address }}:{{ repo_pkg_cache_port | default('3142') }}"
+      proxy="http://{{ internal_lb_vip_address | ipwrap }}:{{ repo_pkg_cache_port | default('3142') }}"
     dest: "/etc/dnf/dnf.conf"
     state: absent
   when:

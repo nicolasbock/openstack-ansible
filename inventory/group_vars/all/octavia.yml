@@ -14,4 +14,4 @@
 # limitations under the License.
 
 # used by neutron role to specify octavia v1 service url
-octavia_service_internaluri: "http://{{ internal_lb_vip_address }}:9876"
+octavia_service_internaluri: "http://{{ internal_lb_vip_address | ipwrap }}:9876"

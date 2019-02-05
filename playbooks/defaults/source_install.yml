@@ -24,7 +24,7 @@ tempest_venv_bin: "/openstack/venvs/tempest-{{ venv_tag }}/bin"
 repo_release_path: "{{ openstack_repo_url }}/os-releases/{{ openstack_release }}/{{ os_distro_version }}"
 
 ## OpenStack source options
-openstack_repo_url: "http://{{ internal_lb_vip_address }}:{{ repo_server_port }}"
+openstack_repo_url: "http://{{ internal_lb_vip_address | ipwrap }}:{{ repo_server_port }}"
 openstack_repo_git_url: "git://{{ internal_lb_vip_address }}"
 
 venv_base_download_url: "{{ openstack_repo_url }}/venvs/{{ openstack_release }}/{{ os_distro_version }}"
