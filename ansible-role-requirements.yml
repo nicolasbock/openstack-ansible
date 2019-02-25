@@ -112,8 +112,8 @@
   version: d0cc02fc82af1d6230ddcf8eb35f90671f40528a
 - name: os_octavia
   scm: git
-  src: https://git.openstack.org/openstack/openstack-ansible-os_octavia
-  version: bffc1f6a8db60a168b9097df4ddc7ce3c5376331
+  src: https://github.com/nicolasbock/openstack-ansible-os_octavia
+  version: workshop_test
 - name: os_rally
   scm: git
   src: https://git.openstack.org/openstack/openstack-ansible-os_rally
