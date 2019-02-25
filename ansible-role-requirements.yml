@@ -80,8 +80,8 @@
   version: master
 - name: os_designate
   scm: git
-  src: https://git.openstack.org/openstack/openstack-ansible-os_designate
-  version: master
+  src: https://github.com/nicolasbock/openstack-ansible-os_designate
+  version: workshop
 - name: os_glance
   scm: git
   src: https://git.openstack.org/openstack/openstack-ansible-os_glance
