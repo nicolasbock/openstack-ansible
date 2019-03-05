@@ -68,8 +68,8 @@
   version: b9a235c748f6fbaca74c33baf89da2cccf04a7c4
 - name: os_cinder
   scm: git
-  src: https://git.openstack.org/openstack/openstack-ansible-os_cinder
-  version: 94902df33aa8d55f9b655bc35da168b096eb374f
+  src: https://github.com/nicolasbock/openstack-ansible-os_cinder
+  version: workshop_test
 - name: os_designate
   scm: git
   src: https://github.com/nicolasbock/openstack-ansible-os_designate
