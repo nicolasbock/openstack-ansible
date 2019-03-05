@@ -72,8 +72,8 @@
   version: master
 - name: os_cinder
   scm: git
-  src: https://git.openstack.org/openstack/openstack-ansible-os_cinder
-  version: master
+  src: https://github.com/nicolasbock/openstack-ansible-os_cinder
+  version: workshop
 - name: os_congress
   scm: git
   src: https://git.openstack.org/openstack/openstack-ansible-os_congress
