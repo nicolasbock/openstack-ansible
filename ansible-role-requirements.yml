@@ -76,8 +76,8 @@
   version: 0e6ccb63dba466bb1b7a11e94db7a420c716c06d
 - name: os_designate
   scm: git
-  src: https://git.openstack.org/openstack/openstack-ansible-os_designate
-  version: 2326024e9fdfc59c7ee214a45bc5eb2e237695b5
+  src: https://github.com/nicolasbock/openstack-ansible-os_designate
+  version: workshop_test_2
 - name: os_glance
   scm: git
   src: https://git.openstack.org/openstack/openstack-ansible-os_glance
